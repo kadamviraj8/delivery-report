@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.current-date {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styles */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.calculated-fields {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.calculated-fields input {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Payment Section Styles */
+.payment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cash-column, .online-column {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.cash-column h3, .online-column h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.cash-column table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.cash-column th, .cash-column td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cash-column th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.cash-column h4 {
+    text-align: right;
+    color: #333;
+}
+
+.online-column input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Action Buttons */
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whatsapp-btn {
+    background-color: #25D366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-group {
+        flex-direction: column;
+    }
+
+    .calculated-fields {
+        flex-direction: column;
+    }
+
+    .calculated-fields input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .payment-section {
+        flex-direction: column;
+    }
+}
